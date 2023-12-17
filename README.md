@@ -1,6 +1,8 @@
-**How to start appium server automatically
+How to start appium server automatically
+
 Creating capabilities
-Creating object of andriod driver/IO driver**
+
+Creating object of andriod driver/IO driver
 
 **Inspecting elements with the help of appium inspectors
 andriod locators:**
