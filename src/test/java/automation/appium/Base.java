@@ -7,6 +7,7 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -26,11 +27,19 @@ public class Base {
 		// create capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Demo");
+		System.out.println(System.getProperty("user.dir"));
 		options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\ApiDemos-debug.apk");
+
+		// C:\\Users\\Prashant\\automation\\appium
 
 		// create object of andriod driver/IO driver
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		// andriod locators
+		// xpath,id,className,accessibilityId,andriodUIautomator
+		// Preference
+		// driver.findElement(By.xpath())
+		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 		driver.quit();
 		service.stop();
 	}

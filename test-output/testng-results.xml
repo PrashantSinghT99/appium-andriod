@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-17T16:40:22 IST" name="Default suite" finished-at="2023-12-17T16:40:42 IST" duration-ms="19276">
+  <suite started-at="2023-12-17T19:20:00 IST" name="Default suite" finished-at="2023-12-17T19:20:14 IST" duration-ms="14341">
     <groups>
     </groups>
-    <test started-at="2023-12-17T16:40:22 IST" name="Default test" finished-at="2023-12-17T16:40:42 IST" duration-ms="19276">
+    <test started-at="2023-12-17T19:20:00 IST" name="Default test" finished-at="2023-12-17T19:20:14 IST" duration-ms="14341">
       <class name="automation.appium.Base">
-        <test-method signature="configureAppium()[pri:0, instance:automation.appium.Base@71a8adcf]" started-at="2023-12-17T16:40:22 IST" name="configureAppium" finished-at="2023-12-17T16:40:41 IST" duration-ms="19223" status="PASS">
+        <test-method signature="configureAppium()[pri:0, instance:automation.appium.Base@71a8adcf]" started-at="2023-12-17T19:20:00 IST" name="configureAppium" finished-at="2023-12-17T19:20:14 IST" duration-ms="14271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
