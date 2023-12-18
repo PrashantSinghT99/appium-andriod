@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.appium.Base">
+      <class name="automation.appium.SetWifi">
         <methods>
-          <include name="configureAppium"/>
+          <include name="setwifiTest"/>
         </methods>
-      </class> <!-- automation.appium.Base -->
+      </class> <!-- automation.appium.SetWifi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

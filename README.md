@@ -17,3 +17,7 @@ xpath,id,className,accessibilityId,andriodUIautomator
   "automationName": "UiAutomator2"
 }
 driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+
+
+Separating configuration logic with test case logic
+making use of @BeforeMethod @AfterMethod @Test(dependsOnMethods = "configureAppium")
