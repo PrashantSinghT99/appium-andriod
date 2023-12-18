@@ -9,7 +9,7 @@ public class SetWifi extends Base {
 
 	@Test
 	public void setwifiTest() {
-		// Locators: id, xpath, accessibilityId, classname, androidUIAutomator
+		// Locators: id, xpath, accessibilityId, classname, o
 		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 
 		// xpath : //TagName[@attribute='value'] ; //tagName
