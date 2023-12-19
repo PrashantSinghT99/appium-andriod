@@ -56,6 +56,12 @@ public class Base {
 //		service.stop();
 	}
 
+	public void longPress(WebElement ele) {
+
+		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
+				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 3000));
+	}
+
 	public void ScrollToEnd() {
 
 		boolean canScrollMore;
