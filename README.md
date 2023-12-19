@@ -1,12 +1,14 @@
-How to start appium server automatically
+Device : Pixel XL
+OS: Andriod 13
+Appium version : 2.2.3
 
-Creating capabilities
+Start appium server automatically.
 
-Creating object of andriod driver/IO driver
+Creating capabilities.
 
-**Inspecting elements with the help of appium inspectors
-andriod locators:**
-xpath,id,className,accessibilityId,andriodUIautomator
+Creating object of andriod driver/IO driver.
+
+Inspecting elements with the help of appium inspectors andriod locators: xpath,id,className,accessibilityId,andriodUIautomator
 
 Integrated andriod inspector
 
@@ -23,6 +25,9 @@ driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 Separating configuration logic with test case logic making use of @BeforeMethod @AfterMethod @Test(dependsOnMethods = "configureAppium")
 
 
-Added Long press gesture ref:https://github.com/appium/appium-uiautomator2-driver/blob/master/docs/android-mobile-gestures.md
+Added Long press 
 Added scroll
-Added swipe
+Added swipe gesture 
+
+ref:https://github.com/appium/appium-uiautomator2-driver/blob/master/docs/android-mobile-gestures.md
+
