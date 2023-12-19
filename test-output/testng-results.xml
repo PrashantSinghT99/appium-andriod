@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T19:19:57 IST" name="Default suite" finished-at="2023-12-18T19:20:15 IST" duration-ms="18522">
+  <suite started-at="2023-12-19T12:49:17 IST" name="Default suite" finished-at="2023-12-19T12:49:40 IST" duration-ms="22425">
     <groups>
     </groups>
-    <test started-at="2023-12-18T19:19:57 IST" name="Default test" finished-at="2023-12-18T19:20:15 IST" duration-ms="18522">
-      <class name="automation.appium.LongPress">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:automation.appium.LongPress@4efac082]" started-at="2023-12-18T19:19:57 IST" name="configureAppium" finished-at="2023-12-18T19:20:04 IST" duration-ms="7722" status="PASS">
+    <test started-at="2023-12-19T12:49:17 IST" name="Default test" finished-at="2023-12-19T12:49:40 IST" duration-ms="22425">
+      <class name="automation.appium.Swipe">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:automation.appium.Swipe@506ae4d4]" started-at="2023-12-19T12:49:17 IST" name="configureAppium" finished-at="2023-12-19T12:49:33 IST" duration-ms="15808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="longpressTest()[pri:0, instance:automation.appium.LongPress@4efac082]" started-at="2023-12-18T19:20:04 IST" name="longpressTest" finished-at="2023-12-18T19:20:14 IST" duration-ms="10164" status="PASS">
+        <test-method signature="SwipeTest()[pri:0, instance:automation.appium.Swipe@506ae4d4]" started-at="2023-12-19T12:49:33 IST" name="SwipeTest" finished-at="2023-12-19T12:49:40 IST" duration-ms="6244" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- longpressTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.appium.LongPress@4efac082]" started-at="2023-12-18T19:20:14 IST" name="tearDown" finished-at="2023-12-18T19:20:15 IST" duration-ms="574" status="PASS">
+        </test-method> <!-- SwipeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.appium.Swipe@506ae4d4]" started-at="2023-12-19T12:49:40 IST" name="tearDown" finished-at="2023-12-19T12:49:40 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automation.appium.LongPress -->
+      </class> <!-- automation.appium.Swipe -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
