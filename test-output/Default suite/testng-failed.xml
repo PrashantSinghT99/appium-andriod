@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.appium.ScrollTest">
+      <class name="automation.appium.Dropdown">
         <methods>
+          <include name="generalStoreTestDropdown"/>
           <include name="tearDown"/>
           <include name="configureAppium"/>
-          <include name="scrollTest"/>
         </methods>
-      </class> <!-- automation.appium.ScrollTest -->
+      </class> <!-- automation.appium.Dropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

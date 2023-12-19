@@ -40,7 +40,7 @@ public class Base {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Demo");
 		// System.out.println(System.getProperty("user.dir"));
-		options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\ApiDemos-debug.apk");
+		options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\General-Store.apk");
 
 		// C:\\Users\\Prashant\\automation\\appium
 
