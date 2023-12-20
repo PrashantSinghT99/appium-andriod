@@ -31,3 +31,6 @@ Added swipe gesture
 
 ref:https://github.com/appium/appium-uiautomator2-driver/blob/master/docs/android-mobile-gestures.md
 
+
+Hybrid app handle context for andriod ui and web
+ref:https://appium.readthedocs.io/en/latest/en/writing-running-appium/web/hybrid/

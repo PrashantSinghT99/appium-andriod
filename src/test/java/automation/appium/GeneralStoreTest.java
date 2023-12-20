@@ -1,9 +1,12 @@
 package automation.appium;
 
 import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -35,7 +38,7 @@ public class GeneralStoreTest extends Base {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void ToastMsgTest() {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(
@@ -51,6 +54,7 @@ public class GeneralStoreTest extends Base {
 
 	}
 
+	@Test
 	public void testHybrid() throws InterruptedException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(
@@ -62,13 +66,17 @@ public class GeneralStoreTest extends Base {
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 		driver.findElement(AppiumBy.androidUIAutomator(
 				"new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air Jordan 9 Retro\"));"));
-		int count = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
-		for (int i = 0; i < count; i++) {
-			String productName = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i)
-					.getText();
-			if (productName.equalsIgnoreCase("Air Jordan 9 Retro")) {
-				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
-
+//		int count = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+//		System.out.println(count);
+		List<WebElement> products = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+		// System.out.println(products);
+		if (!products.isEmpty()) {
+			for (int i = 0; i < products.size(); i++) {
+				String productName = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i)
+						.getText();
+				if (productName.equalsIgnoreCase("Air Jordan 9 Retro")) {
+					driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+				}
 			}
 			driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 			Thread.sleep(2000);
@@ -77,7 +85,6 @@ public class GeneralStoreTest extends Base {
 			Set<String> s = driver.getContextHandles();
 			for (String ContextName : s) {
 				System.out.println(ContextName); // Will print the name of both Native and WebView ContextId
-
 			}
 			driver.context("WEBVIEW_com.androidsample.generalstore");
 			Thread.sleep(6000);

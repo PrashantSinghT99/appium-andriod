@@ -39,21 +39,14 @@ public class Base {
 		// create capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Demo");
-		// System.out.println(System.getProperty("user.dir"));
 		options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\General-Store.apk");
-
-		// C:\\Users\\Prashant\\automation\\appium
+		options.setChromedriverExecutable(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\chromedriver.exe");
 
 		// create object of andriod driver/IO driver
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		// andriod locators
 		// xpath,id,className,accessibilityId,andriodUIautomator
-		// Preference
-		// driver.findElement(By.xpath())
-//		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
-//		driver.quit();
-//		service.stop();
 	}
 
 	public void longPress(WebElement ele) {
