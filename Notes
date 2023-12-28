@@ -1,0 +1,26 @@
+Alternate way of desired capabilities
+
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability("deviceName", "Demo");
+capabilities.setCapability("platformName", "Android");
+capabilities.setCapability("app", System.getProperty("user.dir") + "\\src\\test\\java\\resources\\apk-info.apk");
+capabilities.setCapability("automationName", "UiAutomator2");
+capabilities.setCapability("chromedriverExecutable",System.getProperty("user.dir")+ "\\src\\test\\java\\resources\\chromedriver.exe");
+
+
+ andriod locators ====>>> xpath,id,className,accessibilityId,andriodUIautomator
+ 
+ 
+ URL appiumServerURL = new URL("http://127.0.0.1:4723/wd/hub");
+ AppiumDriver<MobileElement> driver = new AndroidDriver<>(appiumServerURL, capabilities);
+ 
+ // Perform long press on the element
+TouchAction touchAction = new TouchAction(driver);
+touchAction.longPress(LongPressOptions.longPressOptions().withElement(ElementOption.element(element))
+.withDuration(Duration.ofSeconds(2))).release().perform();
+
+//Scroll
+
+driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))
+.scrollIntoView(new UiSelector().textContains(\"WebView\")
+.instance(0))").click();

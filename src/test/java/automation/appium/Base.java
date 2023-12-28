@@ -40,13 +40,13 @@ public class Base {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Demo");
 		options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\General-Store.apk");
-		options.setChromedriverExecutable(System.getProperty("user.dir") + "\\src\\test\\java\\resources\\chromedriver.exe");
+		options.setChromedriverExecutable(
+				System.getProperty("user.dir") + "\\src\\test\\java\\resources\\chromedriver.exe");
 
 		// create object of andriod driver/IO driver
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		// andriod locators
-		// xpath,id,className,accessibilityId,andriodUIautomator
+		
 	}
 
 	public void longPress(WebElement ele) {
